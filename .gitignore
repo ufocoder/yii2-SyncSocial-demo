@@ -1,0 +1,6 @@
+.idea
+
+# Mac crap
+.DS_Store
+
+bower_components

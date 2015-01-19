@@ -1,0 +1,14 @@
+{
+  "name": "ifrin/yii2-SyncSocial-demo",
+  "version": "0.1.0",
+  "authors": [
+    "Sergey Ivanov <xifrin@gmail.com>"
+  ],
+  "main": "www/css/main.css",
+  "license": "MIT",
+  "homepage": "https://github.com/ifrin/yii2-SyncSocial-demo",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.2"
+  }
+}

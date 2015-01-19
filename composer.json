@@ -1,0 +1,22 @@
+{
+    "name": "ufocoder/yii2-SyncSocial-demo",
+    "license": "MIT",
+    "description": "Yii2 SyncSocial Demo Application",
+    "minimum-stability": "dev",
+    "config": {
+        "vendor-dir": "app/vendor"
+    },
+    "authors": [
+        {
+            "name": "Sergey Ivanov",
+            "email": "xifrin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.3",
+        "yiisoft/yii2-composer": "2.0.3",
+        "yiisoft/yii2-bootstrap": "2.0.3",
+        "ufocoder/yii2-syncsocial": "dev-master"
+    }
+}
