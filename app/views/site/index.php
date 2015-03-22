@@ -61,10 +61,10 @@ $repo = 'yii2-SyncSocial';
         <div class="alert" style="background: #f8f8f8; border: 1px #eee solid">
             <h4><?= Yii::t('app', 'Attention'); ?></h4>
             <ol>
-                <li><?= Yii::t('app', 'All operation with your social account can execute only by you!') ;?></li>
-                <li><?= Yii::t('app', 'No one can\'t collect or post message to your account in social network!') ;?></li>
+                <li><?= Yii::t('app', 'All operation with your social account can executed by you only!') ;?></li>
+                <li><?= Yii::t('app', 'Noone can\'t collect messages from your social network account or post message to your social network account!') ;?></li>
                 <li><?= Yii::t('app', 'There\'s Yii2-SyncSocial Extension is configurated with <nobr><code>syncDelete</code> = <code>false</code></nobr>') ;?><br />
-                    <small>(<?= Yii::t('app', 'that means after post deleting from social network will not be deleted') ;?>)</small>
+                    <small>(<?= Yii::t('app', 'that means that after you delete post in application, post from social network will not be deleted') ;?>)</small>
                 </li>
             </ol>
         </div>
