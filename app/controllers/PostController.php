@@ -73,6 +73,25 @@ class PostController extends Controller {
     /**
      * @param $id
      *
+     * @return string|\yii\web\Response
+     * @throws NotFoundHttpException
+     */
+    public function actionView( $id ) {
+
+        $model = Post::findOne( $id );
+
+        if ( $model === null ) {
+            throw new NotFoundHttpException( 'The requested page does not exist.' );
+        }
+
+        return $this->render( 'view', [
+            'model' => $model,
+        ] );
+    }
+
+    /**
+     * @param $id
+     *
      * @throws NotFoundHttpException
      * @throws \Exception
      */
