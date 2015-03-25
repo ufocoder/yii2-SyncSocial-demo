@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = Yii::t( 'app', 'Post #{id}', [ 'id' => $model->
     </div>
     <div class="col-md-10">
         <?php if ( empty( $model->syncModel ) ): ?>
-            <i><?= Yii::t( 'app', 'There\'re not social networks post' ); ?></i>
+            <i><?= Yii::t( 'app', 'There\'re not social networks posts' ); ?></i>
         <?php else: ?>
             <?php foreach($model->syncModel as $sync):?>
                 <?= Html::encode( $sync->service_name ); ?>, URL:
