@@ -2,17 +2,22 @@
 
 /**
  * @var yii\web\View $this
- * @var app\models\Sign $model
+ * @var app\models\post\Post $model
  */
 
+$this->title = Yii::t('app', 'Add post');
+
+$this->params['titleButton'][] = [
+    'label' => Yii::t( 'app', 'Back to posts' ),
+    'link'  => [ '/post/index' ],
+    'type'  => 'success',
+    'icon'  => 'list'
+];
+
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Posts'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = Yii::t('app', 'Create');
 ?>
 
-<div class="sign-create">
-    <h1><i class="fa fa-plus"></i> <?= Yii::t('app', 'Add post'); ?></h1>
-
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
-</div>
+<?= $this->render('_form', [
+    'model' => $model,
+]) ?>

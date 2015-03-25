@@ -63,7 +63,9 @@ use yii\widgets\ActiveForm;
                                         ? 'bg-success'
                                         : 'bg-danger'
                         ]
-                    ]);
+                    ])
+                        ." is ".($service->isConnected() ? " connected " : "not connected")
+                        ;
 
                 }
             ]); ?>
